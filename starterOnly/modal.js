@@ -46,6 +46,7 @@ let isFormValid;
 
 ///////////////////////////////objects 
 let inputNews = {}
+
 let surveyAnswers = {
   firstname:'' ,
   lastname :'',
@@ -221,6 +222,10 @@ for(let div of formData){
 for(let obj of inputsFormData){
 
   obj.input.onchange = (e) => {
+
+    if(obj.input.parentNode.lastChild.id === 'error-message'){
+      obj.input.parentNode.removeChild((obj.input.parentNode.lastChild))
+    }
     
     console.log('e.target.value', e.target.value);
 
