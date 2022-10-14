@@ -61,7 +61,7 @@ let surveyAnswers = {
 const patterns = {
 
   name : /^[a-z]{2,10}(([-])([a-z]{2,10}))?$/i,
-  email : /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/g,
+  email : /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/,
   birthdate:/^[\d\-]{10}$/,
   quantity :/^[0-9]{1,2}$/,
 };
